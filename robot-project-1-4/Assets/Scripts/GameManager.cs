@@ -6,30 +6,35 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject currentWeaponImage;
-    public Sprite noWeaponImage;
-
-    void Start()
+    public Sprite CurrentWeaponImage
     {
-        
+        set => GameObject.Find("CurrentWeaponImage").GetComponent<Image>().sprite = value;
     }
 
-    void Update()
+    private PlayerController _playerController;
+
+    [SerializeField] private Sprite _noWeaponImage;
+
+    private void Start()
+    {
+        _playerController = GameObject.FindObjectOfType<PlayerController>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = !Cursor.visible;
+            _playerController.IsPlayerCanMove = !_playerController.IsPlayerCanMove;
         }
-    }
-
-    public void SetCurrentWeaponImage(Sprite weaponImage)
-    {
-        currentWeaponImage.GetComponent<Image>().sprite = weaponImage;
     }
 
     public void SetNoWeaponImage()
     {
-        currentWeaponImage.GetComponent<Image>().sprite = noWeaponImage;
+        CurrentWeaponImage = _noWeaponImage;
     }
 
     // Restart

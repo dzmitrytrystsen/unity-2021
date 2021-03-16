@@ -126,14 +126,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f708d59c59846483f956de39eef37297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponType: Grenade
-  weaponSpeed: 10
-  destroyAfter: 3
   weaponImage: {fileID: 21300000, guid: 46c3d73361a95434c8b48b14142a6c25, type: 3}
-  weaponImpactFX: {fileID: 6237991786460807018, guid: c67d5f44034b94c66baf83e552228263,
+  _weaponType: 1
+  _weaponSpeed: 10
+  _destroyAfter: 3
+  _weaponImpactFX: {fileID: 6237991786460807018, guid: c67d5f44034b94c66baf83e552228263,
     type: 3}
-  radius: 5
-  power: 40
 --- !u!1001 &8601457795761687635
 PrefabInstance:
   m_ObjectHideFlags: 0

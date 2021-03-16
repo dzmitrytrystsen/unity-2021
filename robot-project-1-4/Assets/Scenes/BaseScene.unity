@@ -1102,8 +1102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241ea5a6ddc86489683670a9183b169c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWeaponImage: {fileID: 472065618}
-  noWeaponImage: {fileID: 21300000, guid: 06f424ad7af9d4fe486197ba449a2c16, type: 3}
+  _noWeaponImage: {fileID: 21300000, guid: 06f424ad7af9d4fe486197ba449a2c16, type: 3}
 --- !u!4 &282220244
 Transform:
   m_ObjectHideFlags: 0
@@ -2155,7 +2154,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press ESC to see the mouse pointer
+  m_Text: Click ESC to see the mouse pointer
 --- !u!222 &681759697
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4969,6 +4968,11 @@ PrefabInstance:
       propertyPath: playerAnimator
       value: 
       objectReference: {fileID: 57307452}
+    - target: {fileID: 4684486477715640143, guid: 221373e9ddb4f47a7a87c2b3680d9c83,
+        type: 3}
+      propertyPath: _mouseSensetivity
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4684486477944786802, guid: 221373e9ddb4f47a7a87c2b3680d9c83,
         type: 3}
       propertyPath: m_LocalPosition.z

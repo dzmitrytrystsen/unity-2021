@@ -126,14 +126,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f708d59c59846483f956de39eef37297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponType: Basic
-  weaponSpeed: 30
-  destroyAfter: 2
   weaponImage: {fileID: 21300000, guid: 657c84716080e4665a4b4b84e2f53ebc, type: 3}
-  weaponImpactFX: {fileID: 4767513932783040059, guid: de4a7f96c22ca4d7c91535fc5e41712e,
+  _weaponType: 0
+  _weaponSpeed: 30
+  _destroyAfter: 2
+  _weaponImpactFX: {fileID: 4767513932783040059, guid: de4a7f96c22ca4d7c91535fc5e41712e,
     type: 3}
-  radius: 5
-  power: 10
 --- !u!1001 &8909290687780274043
 PrefabInstance:
   m_ObjectHideFlags: 0
