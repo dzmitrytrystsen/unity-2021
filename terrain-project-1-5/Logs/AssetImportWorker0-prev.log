@@ -1,0 +1,103 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/dmitrytristen/UnityProjects/unity-2021/terrain-project-1-5
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50820
+Successfully changed project path to: /Users/dmitrytristen/UnityProjects/unity-2021/terrain-project-1-5
+/Users/dmitrytristen/UnityProjects/unity-2021/terrain-project-1-5
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 31.22 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.7f1 (c53830e277f1)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/dmitrytristen/UnityProjects/unity-2021/terrain-project-1-5/Assets
+GfxDevice: creating device client; threaded=0
+2021-03-20 11:09:26.902 Unity[3507:166015] Color LCD preferred device: AMD Radeon Pro 555X (high power)
+2021-03-20 11:09:26.902 Unity[3507:166015] Metal devices available: 2
+2021-03-20 11:09:26.902 Unity[3507:166015] 0: AMD Radeon Pro 555X (high power)
+2021-03-20 11:09:26.902 Unity[3507:166015] 1: Intel(R) UHD Graphics 630 (low power)
+2021-03-20 11:09:26.903 Unity[3507:166015] Using device AMD Radeon Pro 555X (high power)
+Initializing Metal device caps: AMD Radeon Pro 555X
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56507
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.2.7f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.2.7f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000753 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 28.25 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.565 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000428 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 27.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.196 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1484 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 172.3 MB.
+System memory in use after: 171.7 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1950.
+Total: 4.100655 ms (FindLiveObjects: 0.401173 ms CreateObjectMapping: 0.135592 ms MarkObjects: 2.561598 ms  DeleteObjects: 0.999725 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/DirtLayer.terrainlayer
+  artifactKey: Guid(2e36cb5133ca24742be02a12b780bb09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DirtLayer.terrainlayer using Guid(2e36cb5133ca24742be02a12b780bb09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d44ac65e0c13515aaec705e41d2ef1') in 0.468787 seconds
+  Import took 0.472860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.701320 seconds.
+  path: Assets/Scenes/BasicScene.unity
+  artifactKey: Guid(c5789fc61b29fe44691af282985062b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/BasicScene.unity using Guid(c5789fc61b29fe44691af282985062b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5cff13fb6b78b70fbc24c337065ee4') in 0.001114 seconds
+  Import took 0.003451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014623 seconds.
+  path: Assets/Scenes/BasicScene.unity
+  artifactKey: Guid(c5789fc61b29fe44691af282985062b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/BasicScene.unity using Guid(c5789fc61b29fe44691af282985062b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5cff13fb6b78b70fbc24c337065ee4') in 0.000986 seconds
+  Import took 0.003291 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
