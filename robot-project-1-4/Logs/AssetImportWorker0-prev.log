@@ -12,57 +12,57 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63837
+64013
 Successfully changed project path to: /Users/dmitrytristen/UnityProjects/unity-2021/robot-project-1-4
 /Users/dmitrytristen/UnityProjects/unity-2021/robot-project-1-4
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 25.97 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 28.78 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.7f1 (c53830e277f1)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/dmitrytristen/UnityProjects/unity-2021/robot-project-1-4/Assets
 GfxDevice: creating device client; threaded=0
-2021-03-17 17:27:36.070 Unity[21874:921863] Color LCD preferred device: AMD Radeon Pro 555X (high power)
-2021-03-17 17:27:36.070 Unity[21874:921863] Metal devices available: 2
-2021-03-17 17:27:36.070 Unity[21874:921863] 0: AMD Radeon Pro 555X (high power)
-2021-03-17 17:27:36.070 Unity[21874:921863] 1: Intel(R) UHD Graphics 630 (low power)
-2021-03-17 17:27:36.071 Unity[21874:921863] Using device AMD Radeon Pro 555X (high power)
+2021-03-17 17:51:40.836 Unity[22081:933709] Color LCD preferred device: AMD Radeon Pro 555X (high power)
+2021-03-17 17:51:40.836 Unity[22081:933709] Metal devices available: 2
+2021-03-17 17:51:40.836 Unity[22081:933709] 0: AMD Radeon Pro 555X (high power)
+2021-03-17 17:51:40.836 Unity[22081:933709] 1: Intel(R) UHD Graphics 630 (low power)
+2021-03-17 17:51:40.837 Unity[22081:933709] Using device AMD Radeon Pro 555X (high power)
 Initializing Metal device caps: AMD Radeon Pro 555X
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56874
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56081
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.7f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.7f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000745 seconds.
+Registered in 0.000748 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 24.79 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 24.72 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.824 seconds
+- Completed reload, in  2.608 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000346 seconds.
+Registered in 0.000342 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.941 seconds
+- Completed reload, in  0.963 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -71,138 +71,217 @@ Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
 Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1117 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 118.9 MB.
-System memory in use after: 119.0 MB.
+System memory in use before: 119.9 MB.
+System memory in use after: 120.0 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1571.
-Total: 2.908740 ms (FindLiveObjects: 0.299033 ms CreateObjectMapping: 0.081740 ms MarkObjects: 2.447859 ms  DeleteObjects: 0.077331 ms)
+Total: 2.023684 ms (FindLiveObjects: 0.180288 ms CreateObjectMapping: 0.065974 ms MarkObjects: 1.694470 ms  DeleteObjects: 0.081453 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(221373e9ddb4f47a7a87c2b3680d9c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(221373e9ddb4f47a7a87c2b3680d9c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24138f3409a7d6e22c8ea888436d1696') in 0.437972 seconds
-  Import took 0.443405 seconds .
+  path: Assets/Prefabs/helloWorld 1.fbx
+  artifactKey: Guid(6cf1fe554366b401687f2bad83139c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/helloWorld 1.fbx using Guid(6cf1fe554366b401687f2bad83139c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0996cdd791a2ff1141fdb0961a651e1') in 0.356972 seconds
+  Import took 0.360525 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.515656 seconds.
-  path: Assets/Prefabs/helloWorld.fbx
-  artifactKey: Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/helloWorld.fbx using Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45015915d30f9894e7bfc325afefabc9') in 0.179113 seconds
-  Import took 0.181737 seconds .
+  Time since last request: 5.575841 seconds.
+  path: Assets/LowpolyStreetPack/Meshes/Materials/Atlas.mat
+  artifactKey: Guid(38e0f6c0765a5374f9a428840748d450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowpolyStreetPack/Meshes/Materials/Atlas.mat using Guid(38e0f6c0765a5374f9a428840748d450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75da3bd996469b4774c8c11be33757ab') in 0.222880 seconds
+  Import took 0.227416 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.926579 seconds.
-  path: Assets/Prefabs/helloWorld.fbx
-  artifactKey: Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/helloWorld.fbx using Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab167192dba11616004589bd33907a57') in 0.063092 seconds
-  Import took 0.066177 seconds .
+  Time since last request: 0.000197 seconds.
+  path: Assets/SimpleFX/Materials/FX_GunFlash.mat
+  artifactKey: Guid(f1b0fea076fb0574d868f6e3d9523f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleFX/Materials/FX_GunFlash.mat using Guid(f1b0fea076fb0574d868f6e3d9523f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f967cc1f07e712e10527fe581bf66c92') in 0.010567 seconds
+  Import took 0.012579 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 62.828474 seconds.
-  path: Assets/Prefabs/helloWorld.fbx
-  artifactKey: Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/helloWorld.fbx using Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd256351313e7570f6f583a6f8838b19c') in 0.046642 seconds
-  Import took 0.050215 seconds .
+  Time since last request: 0.000202 seconds.
+  path: Assets/SimpleFX/Materials/FX_Base.mat
+  artifactKey: Guid(a0cec58fc32f482418596ffdf7c0d693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleFX/Materials/FX_Base.mat using Guid(a0cec58fc32f482418596ffdf7c0d693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5747f5d4fb134a52ec04ee0f4e5db2e') in 0.039005 seconds
+  Import took 0.040878 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.460830 seconds.
-  path: Assets/Prefabs/helloWorld.fbx
-  artifactKey: Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/helloWorld.fbx using Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97bcd06a8b0196e2f0b2e210c277266e') in 0.048522 seconds
-  Import took 0.051361 seconds .
+  Time since last request: 0.000200 seconds.
+  path: Assets/SimpleFX/Materials/FX_Glow.mat
+  artifactKey: Guid(040cfa3c61ad57946ae16c627e338920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleFX/Materials/FX_Glow.mat using Guid(040cfa3c61ad57946ae16c627e338920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36a8b98142443ce2869728882bc2579') in 0.008017 seconds
+  Import took 0.010361 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Prefabs/No Name.mat
-  artifactKey: Guid(b9d75a7f4ef484aea8c4029dba5d2e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/No Name.mat using Guid(b9d75a7f4ef484aea8c4029dba5d2e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764353c1f8b82489b7ad4096f0fe0b18') in 0.139210 seconds
-  Import took 0.142313 seconds .
+  Time since last request: 0.000197 seconds.
+  path: Assets/LowpolyStreetPack/Meshes/Materials/Fence.mat
+  artifactKey: Guid(66b1abe22abb5794c8d330a05b0abf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowpolyStreetPack/Meshes/Materials/Fence.mat using Guid(66b1abe22abb5794c8d330a05b0abf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef47d8786e795320d1f636cf92942942') in 0.084354 seconds
+  Import took 0.086544 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.795269 seconds.
-  path: Assets/Prefabs/helloWorld.fbx
-  artifactKey: Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/helloWorld.fbx using Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98b85463288f33bc245f125952eedf2') in 0.044208 seconds
-  Import took 0.046298 seconds .
+  Time since last request: 0.000296 seconds.
+  path: Assets/LowpolyStreetPack/Meshes/Materials/Fence.mat
+  artifactKey: Guid(66b1abe22abb5794c8d330a05b0abf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowpolyStreetPack/Meshes/Materials/Fence.mat using Guid(66b1abe22abb5794c8d330a05b0abf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef47d8786e795320d1f636cf92942942') in 0.008426 seconds
+  Import took 0.010403 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.189302 seconds.
-  path: Assets/Prefabs/helloWorld.fbx
-  artifactKey: Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/helloWorld.fbx using Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14999ea4399c9658f276185a204a530') in 0.043928 seconds
-  Import took 0.046785 seconds .
+  Time since last request: 19.267812 seconds.
+  path: Assets/Prefabs/helloWorld 1.fbx
+  artifactKey: Guid(6cf1fe554366b401687f2bad83139c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/helloWorld 1.fbx using Guid(6cf1fe554366b401687f2bad83139c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '345cab42cc5a2b197989572b553339c0') in 0.015160 seconds
+  Import took 0.017402 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 100.989969 seconds.
-  path: Assets/Prefabs/helloWorld.fbx
-  artifactKey: Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/helloWorld.fbx using Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9baaeca33d53ced80c02ca47cbd3701f') in 0.042505 seconds
-  Import took 0.045125 seconds .
+  Time since last request: 25.387876 seconds.
+  path: Assets/SimpleFX/Materials/FX_Lightray.mat
+  artifactKey: Guid(7e0b60daf18511249a209d52beda2988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleFX/Materials/FX_Lightray.mat using Guid(7e0b60daf18511249a209d52beda2988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9fbd09008546cd2b0f25a3c03d294e') in 0.024448 seconds
+  Import took 0.026990 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 33.845326 seconds.
-  path: Assets/Prefabs/helloWorld.fbx
-  artifactKey: Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/helloWorld.fbx using Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dece2028e727c37a1b5a3748d39b0528') in 0.042029 seconds
-  Import took 0.044516 seconds .
+  Time since last request: 0.000282 seconds.
+  path: Assets/SimpleFX/Materials/FX_Rubble.mat
+  artifactKey: Guid(7a9bced7715b2c047b5413e33bc60d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleFX/Materials/FX_Rubble.mat using Guid(7a9bced7715b2c047b5413e33bc60d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f02de62da446ef584d7a4c4abb666dc') in 0.009977 seconds
+  Import took 0.011970 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006906 seconds.
-  path: Assets/Prefabs/helloWorld.fbx
-  artifactKey: Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/helloWorld.fbx using Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dece2028e727c37a1b5a3748d39b0528') in 0.015530 seconds
-  Import took 0.017772 seconds .
+  Time since last request: 0.066850 seconds.
+  path: Assets/SimpleFX/Materials/FX_Splash.mat
+  artifactKey: Guid(1ee00051305bdb049b02c923f047227d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleFX/Materials/FX_Splash.mat using Guid(1ee00051305bdb049b02c923f047227d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a15fbc53439a7685a14e0f1fb259669') in 0.008282 seconds
+  Import took 0.011020 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 245.840471 seconds.
-  path: Assets/Prefabs/helloWorld.fbx
-  artifactKey: Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/helloWorld.fbx using Guid(55c9496fe13df46b4851ec6624abf6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434869d404ed80b7184607cd93ed5fb0') in 0.039978 seconds
-  Import took 0.041994 seconds .
+  Time since last request: 0.000224 seconds.
+  path: Assets/LowpolyStreetPack/Meshes/Materials/LightShape.mat
+  artifactKey: Guid(d380add981a51514ab244cdc8488adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowpolyStreetPack/Meshes/Materials/LightShape.mat using Guid(d380add981a51514ab244cdc8488adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49cb314bf9292d215ab3e352ef62179') in 0.025571 seconds
+  Import took 0.027559 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 221.138586 seconds.
-  path: Assets/Prefabs/DefaultMaterial.mat
-  artifactKey: Guid(71e330dca72d14d7e811bf0bcc9462bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DefaultMaterial.mat using Guid(71e330dca72d14d7e811bf0bcc9462bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f958f036dc52539e4c10aff88e9032') in 0.029178 seconds
-  Import took 0.031714 seconds .
+  Time since last request: 0.000190 seconds.
+  path: Assets/SimpleFX/Materials/FX_Water.mat
+  artifactKey: Guid(daf5714b1bd61c84fb8f439922ec2664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleFX/Materials/FX_Water.mat using Guid(daf5714b1bd61c84fb8f439922ec2664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c722a25e728230bd84798a532fdbf474') in 0.026268 seconds
+  Import took 0.028465 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000430 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.839 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1111 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.2 MB.
-System memory in use after: 136.3 MB.
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket30.fbx
+  artifactKey: Guid(93aa6b0374cbc5d429b7fef4523e1650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket30.fbx using Guid(93aa6b0374cbc5d429b7fef4523e1650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b194892b4f8b681f2dda8da115b099c6') in 0.017314 seconds
+  Import took 0.019272 seconds .
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1619.
-Total: 2.700370 ms (FindLiveObjects: 0.292763 ms CreateObjectMapping: 0.090907 ms MarkObjects: 2.285547 ms  DeleteObjects: 0.027891 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket28.fbx
+  artifactKey: Guid(86fc77829a6e78d43a007a5d05e6be45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket28.fbx using Guid(86fc77829a6e78d43a007a5d05e6be45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c6963426cfbaccf62cd4f12530e17d') in 0.298721 seconds
+  Import took 0.300852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket23.fbx
+  artifactKey: Guid(b870450fc3cf4b148af930fc85b1cb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket23.fbx using Guid(b870450fc3cf4b148af930fc85b1cb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb519d2b298a1e75486ddc7a9ae41a5') in 0.052588 seconds
+  Import took 0.054476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket30.fbx
+  artifactKey: Guid(93aa6b0374cbc5d429b7fef4523e1650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket30.fbx using Guid(93aa6b0374cbc5d429b7fef4523e1650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b194892b4f8b681f2dda8da115b099c6') in 0.025468 seconds
+  Import took 0.027794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket29.fbx
+  artifactKey: Guid(5bb10a455c42fbd4db3364f122c26a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket29.fbx using Guid(5bb10a455c42fbd4db3364f122c26a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3223c36820fb972b89cc6bb30f503150') in 0.026793 seconds
+  Import took 0.029114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/LowpolyStreetPack/Meshes/Materials/Leaves_02.mat
+  artifactKey: Guid(ef03674ad19dc4f4985cb53df430ba91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowpolyStreetPack/Meshes/Materials/Leaves_02.mat using Guid(ef03674ad19dc4f4985cb53df430ba91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5f4581dbe63ee33a38e5324930974b') in 0.044555 seconds
+  Import took 0.047184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Materials/GreenMaterial.mat
+  artifactKey: Guid(08d3a4095b6834d0aa732a4594e2bd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GreenMaterial.mat using Guid(08d3a4095b6834d0aa732a4594e2bd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c497acc7165c08beb6fffd76dc778e6e') in 0.008955 seconds
+  Import took 0.011197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/LowpolyStreetPack/Meshes/Materials/Grass.mat
+  artifactKey: Guid(700158700e4398340be1a92aa014ec3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowpolyStreetPack/Meshes/Materials/Grass.mat using Guid(700158700e4398340be1a92aa014ec3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e9cfbf75688fc35dfa8e98b27b0999') in 0.011645 seconds
+  Import took 0.013471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket27.fbx
+  artifactKey: Guid(ed244208472a4e048835974f57110a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket27.fbx using Guid(ed244208472a4e048835974f57110a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611cf36c65162ceeb4978649595e9682') in 0.027007 seconds
+  Import took 0.029334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/LowpolyStreetPack/Meshes/Materials/Leaves_V01.mat
+  artifactKey: Guid(5cc1d00d2a111e94fbaa8e91793ebc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowpolyStreetPack/Meshes/Materials/Leaves_V01.mat using Guid(5cc1d00d2a111e94fbaa8e91793ebc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd00e755e37fcb75102857b9f77402c3') in 0.009043 seconds
+  Import took 0.011282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket26.fbx
+  artifactKey: Guid(e161d2913bca37a44a645d97c1e0c715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket26.fbx using Guid(e161d2913bca37a44a645d97c1e0c715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6467431a51362c79cf9a41af5ae87be2') in 0.018805 seconds
+  Import took 0.021228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket25.fbx
+  artifactKey: Guid(a24750d7eb60fe945b3ff61bfd264da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AurynSky/Rockets Missiles and Bombs/Models/Rocket25.fbx using Guid(a24750d7eb60fe945b3ff61bfd264da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce0d803e8b5d347cd79fd1db588633f8') in 0.022524 seconds
+  Import took 0.024930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/LowpolyStreetPack/Meshes/Materials/Leavas_03.mat
+  artifactKey: Guid(bc03ba30a4c457d47883b5eb0920749c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowpolyStreetPack/Meshes/Materials/Leavas_03.mat using Guid(bc03ba30a4c457d47883b5eb0920749c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e26c03993d00a721ff7bfacfbd09cfa8') in 0.012744 seconds
+  Import took 0.014865 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
