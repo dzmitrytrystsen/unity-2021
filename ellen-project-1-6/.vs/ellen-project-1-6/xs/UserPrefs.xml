@@ -1,20 +1,14 @@
 ﻿<Properties StartupConfiguration="{65B31CF3-929E-6351-4676-ED4CD2E97EC9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Animation/PlayerAnimationController.cs">
     <Files>
+      <File FileName="Assets/Scripts/Player/PlayerController.cs" Line="98" Column="1" />
       <File FileName="Assets/DeathCollider.cs" Line="11" Column="39" />
-      <File FileName="Assets/Scripts/Player/PlayerController.cs" Line="126" Column="9" />
+      <File FileName="Assets/Scripts/Animation/PlayerAnimationController.cs" Line="12" Column="33" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Unity" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="10c0d83e-86f0-4b44-bea2-5d04732764c8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="093154a8-7c8b-45a8-b5a3-58acc22b6d6f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

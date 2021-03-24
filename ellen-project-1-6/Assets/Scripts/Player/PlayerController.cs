@@ -36,6 +36,9 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         _myCharacterController = GetComponent<CharacterController>();
         _myTransform = GetComponent<Transform>();
         _myCamera = Camera.main;
@@ -91,18 +94,7 @@ public class PlayerController : MonoBehaviour
     {
         _horizontalInput = Input.GetAxis("Horizontal");
         _verticalInput = Input.GetAxis("Vertical");
-
         _moveDirection = new Vector3(_horizontalInput, 0f, _verticalInput);
-
-        Vector3 currentDirection = _myTransform.position;
-        Vector3 targetDir = _moveDirection - currentDirection;
-        Vector3 forward = _myTransform.forward;
-        float angleBetween = Vector3.SignedAngle(targetDir, forward, Vector3.up);
-        if (Mathf.Abs(angleBetween) > 160f)
-        {
-            Debug.Log("Turned 180!");
-        }
-
 
         Vector3 rotatedMovement = Quaternion.Euler(0f, _myCamera.transform.rotation.eulerAngles.y, 0f) * _moveDirection;
         Vector3 verticalMovement = Vector3.up * _speedY;
