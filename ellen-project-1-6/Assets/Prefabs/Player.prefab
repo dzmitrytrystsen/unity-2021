@@ -80,7 +80,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: b10ed38cd215b4ef8b847349cc5c9cef, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -117,11 +117,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerSpeed: 1
-  _playerSprintSpeed: 3
-  _playerJumpSpeed: 5
+  _playerSprintSpeed: 2
+  _playerJumpSpeed: 7
   _rotationSpeed: 0.1
-  _speedY: 0
-  _isJumping: 0
 --- !u!114 &2724790493555031329
 MonoBehaviour:
   m_ObjectHideFlags: 0

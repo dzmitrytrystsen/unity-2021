@@ -59,10 +59,11 @@
     <Compile Include="Assets/Cinemachine/Base/Runtime/Behaviours/CinemachinePath.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Behaviours/CinemachineSmoothPath.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Core/ICinemachineCamera.cs" />
+    <Compile Include="Assets/Scripts/Animation/DeathDetection.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Core/CinemachineDebugLogger.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Core/UnityVectorExtensions.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Behaviours/CinemachineExternalCamera.cs" />
-    <Compile Include="Assets/Scripts/PlayerAnimationController.cs" />
+    <Compile Include="Assets/Scripts/Animation/PlayerAnimationController.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Behaviours/CinemachineFreeLook.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Components/CinemachineFramingTransposer.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Core/NoiseSettings.cs" />
@@ -103,16 +104,16 @@
     <Compile Include="Assets/Cinemachine/Base/Runtime/Components/CinemachineComposer.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Behaviours/CinemachineFollowZoom.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Behaviours/CinemachineBlendListCamera.cs" />
-    <Compile Include="Assets/Scripts/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/Player/PlayerController.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Core/CinemachineExtension.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Core/CameraState.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Core/AxisState.cs" />
+    <Compile Include="Assets/Scripts/Animation/SpawnEndDetection.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Core/CinemachineCore.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Core/CinemachineBlend.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Behaviours/CinemachineSmoother.cs" />
     <Compile Include="Assets/Cinemachine/Base/Runtime/Core/CinemachineVirtualCameraBase.cs" />
-    <Compile Include="Assets/SpawnEndDetection.cs" />
-    <Compile Include="Assets/DeathDetection.cs" />
+    <Compile Include="Assets/DeathCollider.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/3D Game Kit - Character Pack/Shaders/Alien.shader" />
