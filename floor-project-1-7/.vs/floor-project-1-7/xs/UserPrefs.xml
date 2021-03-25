@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{8FA390F5-17F1-3BAD-D8DC-F66AEA6E5634}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/StairsLooper.cs">
+    <Files>
+      <File FileName="Assets/StairsLooper.cs" Line="18" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ddf26e3e-2a3b-4a5b-b2c2-170ba0374a7c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

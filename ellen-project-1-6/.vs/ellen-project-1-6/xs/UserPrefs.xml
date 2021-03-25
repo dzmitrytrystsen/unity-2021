@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{65B31CF3-929E-6351-4676-ED4CD2E97EC9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Animation/PlayerAnimationController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/PlayerController.cs" Line="98" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerController.cs" Line="14" Column="70" />
       <File FileName="Assets/DeathCollider.cs" Line="11" Column="39" />
-      <File FileName="Assets/Scripts/Animation/PlayerAnimationController.cs" Line="12" Column="33" />
+      <File FileName="Assets/Scripts/Animation/PlayerAnimationController.cs" Line="13" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
