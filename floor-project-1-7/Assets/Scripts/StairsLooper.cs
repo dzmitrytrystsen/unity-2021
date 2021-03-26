@@ -12,7 +12,7 @@ public class StairsLooper : MonoBehaviour
     {
         if (other.gameObject.GetComponent<PlayerController>())
         {
-            nextFloorPosition = transform.parent.position + new Vector3(0f, 8f, 0f);
+            nextFloorPosition = transform.parent.position - new Vector3(0f, 10f, 0f);
             Instantiate(_floorBlockPrefab, nextFloorPosition, Quaternion.identity);
         }
     }

@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _mouseSensitivityX = 100f;
     [SerializeField] private float _mouseSensitivityY = 50f;
 
+    [Header("Audio Settings")]
+    [SerializeField] private AudioClip _slowBreath;
+    [SerializeField] private AudioClip _walkSound;
+
     private float _gravityValue = -9.81f;
     private float _verticalSpeed = 0;
     private float _horizontalAngle, _verticalAngle;
@@ -18,6 +22,10 @@ public class PlayerController : MonoBehaviour
 
     private CharacterController _characterController;
     private Camera _mainCamera;
+    private Foots _foots;
+
+
+    private AudioSource _audioSource;
 
     private void Start()
     {
@@ -25,7 +33,12 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
 
         _characterController = GetComponent<CharacterController>();
+        _audioSource = GetComponent<AudioSource>();
         _mainCamera = Camera.main;
+        _foots = FindObjectOfType<Foots>();
+
+        _audioSource.clip = _slowBreath;
+        _audioSource.Play();
     }
 
     private void Update()
@@ -42,6 +55,7 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 moveDirection = new Vector3(horizontalInput, _verticalSpeed, verticalInput);
+        Vector3 cleanMoveDirection = new Vector3(horizontalInput, 0f, verticalInput);
 
         float currentSpeed = _isSprint ? _playerSprintSpeed : _playerWalkSpeed;
 
@@ -49,6 +63,20 @@ public class PlayerController : MonoBehaviour
         moveDirection = transform.TransformDirection(moveDirection);
 
         _characterController.Move(moveDirection);
+
+        if (!_isSprint && cleanMoveDirection.sqrMagnitude > 0.1f)
+        {
+            _foots.CurrentMoveType = Foots.MoveType.Walk;
+        }
+        else if (_isSprint && cleanMoveDirection.sqrMagnitude > 0.1f)
+        {
+
+            _foots.CurrentMoveType = Foots.MoveType.Sprint;
+        }
+        else
+        {
+            _foots.CurrentMoveType = Foots.MoveType.Idle;
+        }
     }
 
     private void Rotate()
