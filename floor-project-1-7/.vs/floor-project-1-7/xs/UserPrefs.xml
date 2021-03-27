@@ -1,12 +1,15 @@
 ﻿<Properties StartupConfiguration="{8FA390F5-17F1-3BAD-D8DC-F66AEA6E5634}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/StairsLooper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DestroyPlanks.cs">
     <Files>
-      <File FileName="Assets/StairsLooper.cs" Line="18" Column="6" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StairsLooper.cs" Line="17" Column="10" />
+      <File FileName="Assets/LevelDestroyer.cs" Line="13" Column="32" />
+      <File FileName="Assets/DestroyPlanks.cs" Line="29" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ddf26e3e-2a3b-4a5b-b2c2-170ba0374a7c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dff87f3a-5e78-4dbc-9b47-81b9e36718db" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
