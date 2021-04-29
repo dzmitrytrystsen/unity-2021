@@ -1,15 +1,14 @@
 ﻿<Properties StartupConfiguration="{65B31CF3-929E-6351-4676-ED4CD2E97EC9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Animation/SpawnEndDetection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Animation/PlayerAnimationController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/PlayerController.cs" Line="51" Column="24" />
-      <File FileName="Assets/DeathCollider.cs" Line="10" Column="9" />
-      <File FileName="Assets/Scripts/Animation/PlayerAnimationController.cs" Line="13" Column="40" />
-      <File FileName="Assets/Scripts/Animation/SpawnEndDetection.cs" Line="11" Column="47" />
+      <File FileName="Assets/Scripts/Player/PlayerController.cs" Line="59" Column="6" />
+      <File FileName="Assets/Scripts/Animation/PlayerAnimationController.cs" Line="24" Column="1" />
+      <File FileName="Assets/CutScene.cs" Line="17" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d66fba1d-9fd3-408d-b0a8-8aaff19a48a5" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e79ac4eb-f07c-46ef-8af8-d5b6d954c9e0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -48,12 +48,9 @@ public class PlayerController : MonoBehaviour
     {
         UseGravity();
 
-        if (_ifCanMove)
-        {
-            Move();
-            Rotate();
-            Jump();
-        }
+        Move();
+        Rotate();
+        Jump();
     }
 
     public void SwitchCanMoveState()
