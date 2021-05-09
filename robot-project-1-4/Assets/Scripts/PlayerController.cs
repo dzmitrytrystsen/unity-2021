@@ -1,19 +1,30 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public delegate void ShootAction();
+    public static event ShootAction OnShot;
+
     public bool IsPlayerCanMove { get; set; }
 
-    [SerializeField] private GameObject[] weaponPrefabs;
     [SerializeField] private Animator playerAnimator;
 
     [Header("Control Settings")]
     [SerializeField] private float _mouseSensetivity = 10f;
     [SerializeField] private float _playerSpeed = 4f;
 
-    private GameObject currentWeapon;
+    private enum WeaponType
+    {
+        Pistol,
+        Grenade,
+        Ball,
+        Empty
+    }
+
+    private WeaponType currentWeapon;
     private float horizontalInput;
     private float verticalInput;
     private float playerHorizontalAngle;
@@ -26,6 +37,8 @@ public class PlayerController : MonoBehaviour
         _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         playerHorizontalAngle = transform.localEulerAngles.y;
         IsPlayerCanMove = true;
+
+        currentWeapon = WeaponType.Empty;
     }
 
     void Update()
@@ -74,13 +87,33 @@ public class PlayerController : MonoBehaviour
 
     private void ShootFromCurrentWeapon()
     {
-        if (currentWeapon == null)
+        if (currentWeapon == WeaponType.Empty)
             return;
         else
         {
             Vector3 shootDirection = transform.position + transform.forward + new Vector3(0f, 0.6f, 0f);
 
-            Instantiate(currentWeapon, shootDirection, Quaternion.identity);
+            if (currentWeapon == WeaponType.Pistol)
+            {
+                GameObject currentProjectile = ProjectileManager.Instance.GetPooledProjectile(ProjectileManager.WeaponType.Pistol);
+                currentProjectile.transform.position = shootDirection;
+                currentProjectile.SetActive(true);
+                OnShot?.Invoke();
+            }
+            else if (currentWeapon == WeaponType.Grenade)
+            {
+                GameObject currentProjectile = ProjectileManager.Instance.GetPooledProjectile(ProjectileManager.WeaponType.Grenade);
+                currentProjectile.transform.position = shootDirection;
+                currentProjectile.SetActive(true);
+                OnShot?.Invoke();
+            }
+            else
+            {
+                GameObject currentProjectile = ProjectileManager.Instance.GetPooledProjectile(ProjectileManager.WeaponType.Ball);
+                currentProjectile.transform.position = shootDirection;
+                currentProjectile.SetActive(true);
+                OnShot?.Invoke();
+            }
         }
     }
 
@@ -88,24 +121,24 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Basic"))
         {
-            currentWeapon = weaponPrefabs[0];
-            _gameManager.CurrentWeaponImage = currentWeapon.GetComponent<WeaponScript>().weaponImage;
+            currentWeapon = WeaponType.Pistol;
+            _gameManager.CurrentWeaponImage = ProjectileManager.Instance.PistolProjectilePrefab.GetComponent<WeaponScript>().weaponImage;
         }
         else if (other.CompareTag("Grenade"))
         {
-            currentWeapon = weaponPrefabs[1];
-            _gameManager.CurrentWeaponImage = currentWeapon.GetComponent<WeaponScript>().weaponImage;
+            currentWeapon = WeaponType.Grenade;
+            _gameManager.CurrentWeaponImage = ProjectileManager.Instance.GrenadeProjectilePrefab.GetComponent<WeaponScript>().weaponImage;
         }
         else if (other.CompareTag("Tennis"))
         {
-            currentWeapon = weaponPrefabs[2];
-            _gameManager.CurrentWeaponImage = currentWeapon.GetComponent<WeaponScript>().weaponImage;
+            currentWeapon = WeaponType.Ball;
+            _gameManager.CurrentWeaponImage = ProjectileManager.Instance.BallProjectilePrefab.GetComponent<WeaponScript>().weaponImage;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        currentWeapon = null;
+        currentWeapon = WeaponType.Empty;
         _gameManager.SetNoWeaponImage();
     }
 }

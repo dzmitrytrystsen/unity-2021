@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class WeaponScript : MonoBehaviour
 {
+    public delegate void ProjectileCollision();
+    public static event ProjectileCollision OnProjectileCollision;
+
+    public PlayerController PlayerController;
+
     [Header("Weapon Settings")]
     public Sprite weaponImage;
     [SerializeField] private WeaponType _weaponType;
@@ -23,13 +28,38 @@ public class WeaponScript : MonoBehaviour
     private float _lifeCounter;
     private ParticleSystem _currentWeaponImpact;
 
+    private void Awake()
+    {
+        PlayerController.OnShot += StartAction;
+
+        _weaponRigidbody = gameObject.GetComponent<Rigidbody>();
+        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
+
     private void Start()
     {
-        _weaponRigidbody = GetComponent<Rigidbody>();
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        //_lifeCounter = 0f;
+    }
 
-        _lifeCounter = 0f;
+    private void Update()
+    {
+        //_lifeCounter += Time.deltaTime;
 
+
+        //if (_lifeCounter > _destroyAfter)
+        //{
+        //    if (_currentWeaponImpact == null)
+        //        gameObject.SetActive(false);
+        //    else
+        //    {
+        //        _currentWeaponImpact.gameObject.SetActive(false);
+        //        gameObject.SetActive(false);
+        //    }
+        //}
+    }
+
+    private void StartAction()
+    {
         if (_weaponType == WeaponType.Basic || _weaponType == WeaponType.Tennis)
         {
             BehaveBasic();
@@ -38,28 +68,11 @@ public class WeaponScript : MonoBehaviour
         {
             BehaveGrenade();
         }
-
-        transform.localEulerAngles = _player.localEulerAngles;
-    }
-
-    private void Update()
-    {
-        _lifeCounter += Time.deltaTime;
-
-        if (_lifeCounter > _destroyAfter)
-        {
-            if(_currentWeaponImpact == null)
-                Destroy(gameObject);
-            else
-            {
-                Destroy(_currentWeaponImpact.gameObject);
-                Destroy(gameObject);
-            }
-        }
     }
 
     private void BehaveBasic()
     {
+        gameObject.transform.localEulerAngles = _player.localEulerAngles;
         _weaponRigidbody.AddForce(_player.forward * _weaponSpeed, ForceMode.Impulse);
     }
 
@@ -76,14 +89,31 @@ public class WeaponScript : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(false);
     }
 
+    private void Reset()
+    {
+        transform.position = Vector3.zero;
+        _weaponRigidbody.velocity = Vector3.zero;
+        gameObject.SetActive(false);
+    }
+
+    IEnumerator WaitToResetBall()
+    {
+        yield return new WaitForSeconds(1f);
+
+        Reset();
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
+        OnProjectileCollision?.Invoke();
+
         if (_weaponType == WeaponType.Tennis)
-            return;
-        else if(_weaponType == WeaponType.Basic)
+            StartCoroutine(WaitToResetBall());
+        else if (_weaponType == WeaponType.Basic)
         {
-            PlayWeaponImpact();
-            _lifeCounter = _destroyAfter - 0.3f;
+            //PlayWeaponImpact();
+            //_lifeCounter = _destroyAfter - 0.3f;
+            Reset();
         }
         else
         {
@@ -100,8 +130,9 @@ public class WeaponScript : MonoBehaviour
                 }
             }
 
-            PlayWeaponImpact();
-            _lifeCounter = _destroyAfter - 1f;
+            Reset();
+            //PlayWeaponImpact();
+            //_lifeCounter = _destroyAfter - 1f;
         }
     }
 }
